@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>CSV Parser</title>
+            <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+            <style>
+                table
+                {
+                    border: 2px solid black;
+                    border-collapse: collapse;
+                    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.25);
+                    overflow: scroll;
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font: 14px;
+                    width: 80%;
+                }
+                th
+                {
+                    background: #00b359;
+                    color: #ffffff;
+                }
+                th,td
+                {
+                    padding: 10px 20px;
+                    text-align: center;
+                    border: 2px solid black;
+                }
+                tr:nth-child(even)
+                {
+                    background: #eeeeee;
+                }
+                tr:nth-child(odd)
+                {
+                    background: #ffffff;
+                }
+                .center 
+                {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                body
+                {
+                    background-color:#e6fff2;
+                }
+            </style>
+        <head>
+        <body>
+            <input type="file" id="csvFileInput" style="padding-bottom: 20px; padding-top: 20px">
+            <table class="center" id="csvRoot"></table>
+            <script src="/papaparse.min.js"></script>
+            <script type="module" src="/scripts/main.js"></script>
+        </body>
+     </html>  
